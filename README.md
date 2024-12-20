@@ -1,6 +1,6 @@
 ### Introduction
-I wrote this script to automate the deployment of OpenGrok on dev machine. It installs OpenGrok, Tomcat, and Universal Ctags.
-It also generates a script to call the indexer. The script is tested on Ubuntu 20.04.2 LTS.
+- I wrote this script to automate the deployment of OpenGrok on dev machine. It installs OpenGrok, Tomcat, and Universal Ctags.
+- It also generates a script to call the indexer. The script is tested on Ubuntu 20.04.2 LTS.
 
 ### Usage
 ```git
@@ -17,7 +17,7 @@ Tomcat Home = /opt/tomcat
 Tomcat Version = 10.1.13.0
 Opengrok Instance Base = /opt/opengrok
 Opengrok Source Root = /opt/opengrok/src => /opt/src
-Indexer File: Path/to/your/latch/call_indexer.sh <- /bin/callIndexer
+Indexer Path: /bin/callIndexer -> /path-of-your/call_indexer
 Server at: http://127.0.0.1:8080/source
   ___  _ __   ___ _ __   __ _ _ __ ___ | | __
  / _ \| '_ \ / _ \ '_ \ / _` | '__/ _ \| |/ /
@@ -26,7 +26,7 @@ Server at: http://127.0.0.1:8080/source
       |_|               |___/
 ```
 
-- During the first run, `call_indexer.sh` will be generated and linked to `/bin/callIndexer`
+- During the first run, `call_indexer` will be generated and linked to `/bin/callIndexer`
 - Do not remove `latch` folder after installation. It is required by `callIndexer` to run.
 - After the first run, you can then use `callIndexer` alone to index your source code.
 
