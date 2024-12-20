@@ -15,7 +15,7 @@ summaryTxt=$mainWd/summary.txt
 systemSrcRoot=/opt/src
 # Universal Ctags Info
 uCtagsInstDir=$commInstdir/uctags
-# Jdk Info - via apt-get
+# Jdk Info - via apt install
 jdkSystemInstalledVersion=openjdk-11-jdk
 jdkInstDir=/usr/lib/jvm/java-11-openjdk-amd64
 javaInstDir=$jdkInstDir
