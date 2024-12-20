@@ -6,4 +6,4 @@ downloads/
 logs/
 *.tar.gz
 opengrok*.log
-call_indexer.sh
+call_indexer

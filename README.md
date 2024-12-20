@@ -1,3 +1,7 @@
+### Introduction
+I wrote this script to automate the deployment of OpenGrok on dev machine. It installs OpenGrok, Tomcat, and Universal Ctags.
+It also generates a script to call the indexer. The script is tested on Ubuntu 20.04.2 LTS.
+
 ### Usage
 ```git
 $ git clone https://github.com/xiangp126/latch
